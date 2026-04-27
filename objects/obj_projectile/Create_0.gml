@@ -1,10 +1,7 @@
-target_x = x;
-target_y = y;
-
-kb_x = 0;
-kb_y = 0;
-
-
-tilemap = layer_tilemap_get_id("Tiles_Col");
-alarm[0] = 360;
-alarm[1] = 360;
+if(instance_exists(obj_player))
+{
+	target_x = obj_player.x;
+	target_y = obj_player.y;
+}
+targetx = ((target_x - x)*3) + x;
+targety = ((target_y - y) *3) + y;
