@@ -1,4 +1,4 @@
-if(level >= 4)
+if(level >= 6)
 {
 	room_goto_next();
 }

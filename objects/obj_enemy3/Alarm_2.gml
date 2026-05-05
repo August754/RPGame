@@ -2,4 +2,4 @@ if(instance_exists(obj_player) && distance_to_object(obj_player) < distance_to_p
 {
 	instance_create_layer(x, y, "Instances", obj_projectile);
 }
-alarm[2] = 120;
+alarm[2] = 90;

@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
-alarm[2] = 360;
+alarm[2] = 36;
 
