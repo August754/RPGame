@@ -1,0 +1,8 @@
+- 4 enemies totel
+- the 2 original enemies
+- an extra violent enemy
+- a projectile spewing enemy
+- 3 rooms
+- a working lvl system
+- a death mechanic
+- a lvl specific(lvl 6) next room mechanic
