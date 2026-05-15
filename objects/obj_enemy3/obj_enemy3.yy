@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_projectile",
-    "path":"sprites/spr_projectile/spr_projectile.yy",
+    "name":"Sprite24",
+    "path":"sprites/Sprite24/Sprite24.yy",
   },
   "spriteMaskId":null,
   "visible":true,
