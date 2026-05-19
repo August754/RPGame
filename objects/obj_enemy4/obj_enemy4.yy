@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite25",
-    "path":"sprites/Sprite25/Sprite25.yy",
+    "name":"mouth1",
+    "path":"sprites/mouth1/mouth1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

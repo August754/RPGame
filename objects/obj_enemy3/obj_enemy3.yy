@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite24",
-    "path":"sprites/Sprite24/Sprite24.yy",
+    "name":"eye",
+    "path":"sprites/eye/eye.yy",
   },
   "spriteMaskId":null,
   "visible":true,
