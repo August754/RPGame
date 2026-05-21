@@ -25,3 +25,7 @@ function add_xp(_xp_to_add)
 		damage += 0.8
 	}
 }
+if(hp <= 0)
+{
+	room_restart();
+}
