@@ -5,6 +5,7 @@ if(alarm[0] < 0)
 	image_blend = c_red;
 	if(hp <= 0)
 	{
+		instance_destroy();
 		room_restart();
 	}
 }

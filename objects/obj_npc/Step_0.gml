@@ -1,3 +1,4 @@
+
 if(dialogue = 1)
 {
 	
