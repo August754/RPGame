@@ -26,10 +26,6 @@ if(keyboard_check_pressed(vk_space))
 	_inst.image_angle = facing;
 	_inst.damage *= damage;
 }
-if (part >= 1 && room = Room1)
-{
-	x = 10;
-	y = 10;
-}
+
 
 

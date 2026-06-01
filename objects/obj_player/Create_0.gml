@@ -29,4 +29,5 @@ if(hp <= 0)
 {
 	room_restart();
 }
-global.part = 0;
+
+ 

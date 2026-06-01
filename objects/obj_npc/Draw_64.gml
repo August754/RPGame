@@ -2,7 +2,7 @@ var _dx = 16;
 var _dy = 16;
 var _barw = 256;
 var _barh = 32;
-if(room = Room0 && obj_player.part == 0 or obj_player.part == 1)
+if(room = Room0 && global.part == 0)
 {
 	if(dialogue = 1)
 	{
@@ -33,17 +33,17 @@ if(room = Room0 && obj_player.part == 0 or obj_player.part == 1)
 		draw_text(_dx + _barw, _dy + _barh, "walk over the small device to pick it up");
 	}
 }
-if(room = Room1 && obj_player.part == 1)
+else if(room = Room1 && global.part == 1)
 {
 	if(dialogue = 1)
 	{
-		draw_text(_dx + _barw, _dy - _barh / 2, " since you are unexperienced I ");
+		draw_text(_dx + _barw, _dy - _barh /2, " since you are unexperienced I ");
 		draw_text(_dx + _barw, _dy + _barh, " will teach you what you need to know ");
 	}
 	else
 	if(dialogue = 2)
 	{
-		draw_text(_dx + _barw, _dy - _barh / 2, " kill to grow stronger, ");
+		draw_text(_dx + _barw, _dy - _barh /2, " kill to grow stronger,");
 		draw_text(_dx + _barw, _dy + _barh, " press space to attack");
 	}
 	else
