@@ -49,17 +49,18 @@ else if(room = Room1 && global.part == 1)
 	else
 	if(dialogue = 3)
 	{
-		draw_text(_dx + _barw, _dy - _barh / 2, " ");
-		draw_text(_dx + _barw, _dy + _barh, " ");
+		draw_text(_dx + _barw, _dy - _barh / 2, "now look");
+		draw_text(_dx + _barw, _dy + _barh, "you must grown stronger, more leveled");
 	}
 	else
-	if(dialogue = 4)
+	if(dialogue = 4 )
 	{
-		draw_text(_dx + _barw, _dy + _barh, "");
+		draw_text(_dx + _barw, _dy - _barh / 2, "now you must grow stronger");
+		draw_text(_dx + _barw, _dy + _barh, "kill till you're level 6");
 	}
 	else
 	if(dialogue = 5)
 	{
-		draw_text(_dx + _barw, _dy + _barh, "");
+		draw_text(_dx + _barw, _dy + _barh, "drink the suffering and touch the white star");
 	}
 }

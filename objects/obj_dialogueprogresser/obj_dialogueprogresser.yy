@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_homunculus_child",
-    "path":"sprites/spr_homunculus_child/spr_homunculus_child.yy",
+    "name":"spr_dialogueprogresser",
+    "path":"sprites/spr_dialogueprogresser/spr_dialogueprogresser.yy",
   },
   "spriteMaskId":null,
   "visible":true,
