@@ -36,6 +36,7 @@
     {"id":{"name":"obj_dialoguewall3","path":"objects/obj_dialoguewall3/obj_dialoguewall3.yy",},},
     {"id":{"name":"obj_dialoguewall4","path":"objects/obj_dialoguewall4/obj_dialoguewall4.yy",},},
     {"id":{"name":"obj_dialoguewall5","path":"objects/obj_dialoguewall5/obj_dialoguewall5.yy",},},
+    {"id":{"name":"obj_dialoguewall6","path":"objects/obj_dialoguewall6/obj_dialoguewall6.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},
     {"id":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},},
