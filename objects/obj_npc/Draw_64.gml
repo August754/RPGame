@@ -6,7 +6,7 @@ if(room = Room0 && global.part == 0)
 {
 	if(dialogue = 1)
 	{
-		draw_text(_dx + _barw, _dy - _barh / 2, " hello stranger I am in a time of great need,");
+		draw_text(_dx + _barw, _dy - _barh / 2, " my child I am in a time of great need,");
 		draw_text(_dx + _barw, _dy + _barh, " which i am sure you can make pass");
 	}
 	else
@@ -17,7 +17,7 @@ if(room = Room0 && global.part == 0)
 	else
 	if(dialogue = 3)
 	{
-		draw_text(_dx + _barw, _dy - _barh / 2, "'my' child has gone missing ");
+		draw_text(_dx + _barw, _dy - _barh / 2, "'your' sibling has gone missing ");
 		draw_text(_dx + _barw, _dy + _barh, " I am not strong enough to get them myself");
 	}
 	else
@@ -49,7 +49,7 @@ else if(room = Room1 && global.part == 1)
 	else
 	if(dialogue = 3)
 	{
-		draw_text(_dx + _barw, _dy + _barh, "you must grown stronger, more leveled");
+		draw_text(_dx + _barw, _dy + _barh, "you must grown stronger, higher level");
 	}
 	else
 	if(dialogue = 4 )
@@ -72,7 +72,7 @@ else if(room = Room2 && global.part == 1)
 	else
 	if(dialogue = 2)
 	{
-		draw_text(_dx + _barw, _dy - _barh /2, "you grow closer to 'my' child");
+		draw_text(_dx + _barw, _dy - _barh /2, "you grow closer to 'your' sibling");
 		draw_text(_dx + _barw, _dy + _barh, " I can sense them");
 	}
 	else
@@ -85,11 +85,29 @@ else if(room = Room2 && global.part == 1)
 	{
 		draw_text(_dx + _barw, _dy + _barh, "walk over them to pick them up");
 	}
+	if(dialogue = 5)
+	{
+		draw_text(_dx + _barw, _dy + _barh /2, "WAIT");
+		draw_text(_dx + _barw, _dy + _barh, " don't pick me up yet");
+	}
+	else
+	if(dialogue = 6)
+	{
+		draw_text(_dx + _barw, _dy - _barh /2, "you are being decieved, I am not");
+		draw_text(_dx + _barw, _dy + _barh, "their child, they wish to devour me");
+	}
+	else
+	if(dialogue = 7)
+	{
+		draw_text(_dx + _barw, _dy - _barh /2, "however, you can help me");
+		draw_text(_dx + _barw, _dy + _barh, "pick me up and go to the white star");
+		global.path = 1
+	}
 }
 else if(room = Room2 && global.part == 2)
 {
 	alarm[1] = 0;
-	if(dialogue = 5 && alarm[1] >= 0)
+	if(dialogue = 5 && alarm[1] <= 0)
 	{
 		draw_text(_dx + _barw, _dy - _barh /2, "good, good");
 		draw_text(_dx + _barw, _dy + _barh, "now it's time to backtrack");
@@ -97,7 +115,7 @@ else if(room = Room2 && global.part == 2)
 		dialogue += 1;
 	}
 	else
-	if(dialogue = 6 && alarm[1] >= 0)
+	if(dialogue = 6 && alarm[1] <= 0)
 	{
 		draw_text(_dx + _barw, _dy - _barh /2, "don't you agree");
 		draw_text(_dx + _barw, _dy + _barh, " these hostile homunculi are a threat");
@@ -105,7 +123,7 @@ else if(room = Room2 && global.part == 2)
 		dialogue += 1;
 	}
 	else
-	if(dialogue = 7 && alarm[1] >= 0)
+	if(dialogue = 7 && alarm[1] <= 0)
 	{
 		draw_text(_dx + _barw, _dy + _barh, "so walk through the black star");
 		alarm[1] += 120;
