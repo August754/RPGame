@@ -33,6 +33,13 @@ if(room = Room0 && global.part == 0)
 		draw_text(_dx + _barw, _dy + _barh, "walk over the small device to pick it up");
 	}
 }
+else
+if(room = Room6 && global.part == 2)
+{
+	draw_text(_dx + _barw, _dy - _barh / 2, "how gull!ble");
+	draw_text(_dx + _barw, _dy + _barh, "I h@ve c0nsumed enough to l3ave");
+}
+	
 else if(room = Room1 && global.part == 1)
 {
 	if(dialogue = 1)
@@ -85,30 +92,13 @@ else if(room = Room2 && global.part == 1)
 	{
 		draw_text(_dx + _barw, _dy + _barh, "walk over them to pick them up");
 	}
-	/*if(dialogue = 5)
-	{
-		draw_text(_dx + _barw, _dy + _barh /2, "WAIT");
-		draw_text(_dx + _barw, _dy + _barh, " don't pick me up yet");
-	}
-	else
-	if(dialogue = 6)
-	{
-		draw_text(_dx + _barw, _dy - _barh /2, "you are being decieved, I am not");
-		draw_text(_dx + _barw, _dy + _barh, "their child, they wish to devour me");
-	}
-	else
-	if(dialogue = 7)
-	{
-		draw_text(_dx + _barw, _dy - _barh /2, "however, you can help me");
-		draw_text(_dx + _barw, _dy + _barh, "pick me up and go to the white star");
-		global.path = 1
-	}*/
 }
 else if(room = Room2 && global.part == 2)
 {
 	if (dialogue = 4)
 	{
 		alarm[1] = 120;
+		dialogue = 5;
 	}
 	else
 	if(dialogue = 5)
@@ -154,13 +144,14 @@ else if(room = Room2 && global.part == 1)
 	else
 	if(dialogue = 6)
 	{
-		draw_text(_dx + _barw, _dy - _barh /2, "you are being decieved, I am not");
-		draw_text(_dx + _barw, _dy + _barh, "their child, they wish to devour me");
+		draw_text(_dx + _barw, _dy - _barh /2, "you are being decieved, me and you are not");
+		draw_text(_dx + _barw, _dy + _barh, "their children, they wish to devour us");
 	}
 	else
 	if(dialogue = 7)
 	{
 		draw_text(_dx + _barw, _dy - _barh /2, "however, you can help me");
 		draw_text(_dx + _barw, _dy + _barh, "pick me up and go to the white star");
+		global.path = 1;
 	}
 }
