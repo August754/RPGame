@@ -85,7 +85,7 @@ else if(room = Room2 && global.part == 1)
 	{
 		draw_text(_dx + _barw, _dy + _barh, "walk over them to pick them up");
 	}
-	if(dialogue = 5)
+	/*if(dialogue = 5)
 	{
 		draw_text(_dx + _barw, _dy + _barh /2, "WAIT");
 		draw_text(_dx + _barw, _dy + _barh, " don't pick me up yet");
@@ -102,32 +102,45 @@ else if(room = Room2 && global.part == 1)
 		draw_text(_dx + _barw, _dy - _barh /2, "however, you can help me");
 		draw_text(_dx + _barw, _dy + _barh, "pick me up and go to the white star");
 		global.path = 1
-	}
+	}*/
 }
 else if(room = Room2 && global.part == 2)
 {
-	alarm[1] = 0;
-	if(dialogue = 5 && alarm[1] <= 0)
+	if (dialogue = 4)
+	{
+		alarm[1] = 120;
+	}
+	else
+	if(dialogue = 5)
 	{
 		draw_text(_dx + _barw, _dy - _barh /2, "good, good");
 		draw_text(_dx + _barw, _dy + _barh, "now it's time to backtrack");
-		alarm[1] += 120;
-		dialogue += 1;
+		if(alarm[1] <= 0)
+		{
+			dialogue += 1;
+			alarm[1] = 120;
+		}
 	}
 	else
-	if(dialogue = 6 && alarm[1] <= 0)
+	if(dialogue = 6)
 	{
 		draw_text(_dx + _barw, _dy - _barh /2, "don't you agree");
 		draw_text(_dx + _barw, _dy + _barh, " these hostile homunculi are a threat");
-		alarm[1] += 120;
-		dialogue += 1;
+		if(alarm[1] <= 0)
+		{
+			dialogue += 1;
+			alarm[1] += 120;
+		}
 	}
 	else
-	if(dialogue = 7 && alarm[1] <= 0)
+	if(dialogue = 7)
 	{
 		draw_text(_dx + _barw, _dy + _barh, "so walk through the black star");
-		alarm[1] += 120;
-		dialogue += 1;
+		if(alarm[1] <= 0)
+		{
+			dialogue += 1;
+			alarm[1] += 120;
+		}
 	}
 	
 }
@@ -149,6 +162,5 @@ else if(room = Room2 && global.part == 1)
 	{
 		draw_text(_dx + _barw, _dy - _barh /2, "however, you can help me");
 		draw_text(_dx + _barw, _dy + _barh, "pick me up and go to the white star");
-		global.path = 1
 	}
 }

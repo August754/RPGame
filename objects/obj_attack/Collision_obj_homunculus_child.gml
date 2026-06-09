@@ -1,0 +1,1 @@
+//global.path = 1;
